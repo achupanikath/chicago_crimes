@@ -18,7 +18,7 @@ export default class App extends Component {
       .get(`http://localhost:3000/primarylist`)
       .end( (err, res) => {
         if(err){
-
+          // handle the error
         } else {
           this.setState({
             file : res.body
